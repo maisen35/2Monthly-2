@@ -1,0 +1,25 @@
+<table class='table table-bordered'>
+  <h2>７日分の投稿数</h2>
+  <thead>
+    <tr>
+      <td>６日前</td>
+      <td>５日前</td>
+      <td>４日前</td>
+      <td>３日前</td>
+      <td>２日前</td>
+      <td>１日前</td>
+      <td>今日</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= books.created_6days.count %></td>
+      <td><%= books.created_5days.count %></td>
+      <td><%= books.created_4days.count %></td>
+      <td><%= books.created_3days.count %></td>
+      <td><%= books.created_2days.count %></td>
+      <td><%= books.created_yesterday.count %></td>
+      <td><%= books.created_today.count %></td>
+    </tr>
+  </tbody>
+</table>
